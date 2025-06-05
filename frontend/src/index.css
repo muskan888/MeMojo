@@ -1,0 +1,56 @@
+:root {
+  --color-background: #EDC8C8; /* soft rose */
+  --color-accent: #EDDCDC; /* blush beige */
+  --color-card: #F5E6E8; /* paper like */
+  --color-input: #D5CCE0; /* lavender mist */
+  --color-text: #BBAACB; /* primary text */
+  --color-text-secondary: #A08EB5;
+  --color-hover: #9069A2;
+  --color-deep: #192A51;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-background), var(--color-accent));
+}
+
+main {
+  background: var(--color-card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.6em;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-input);
+  margin-bottom: 1rem;
+}
+
+button {
+  background: var(--color-deep);
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--color-hover);
+}
